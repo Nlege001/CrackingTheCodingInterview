@@ -1,3 +1,6 @@
+# there are two solutoins to this problem given that the string is an ASCII strinf and spacing doesn't matter
+
+
 def isUniqueOne(string):
     if len(string) > 128:
         return(False)
@@ -10,3 +13,9 @@ def isUniqueOne(string):
     return True
 
 print(isUniqueOne('Hello'))
+
+
+def isUniqueTwo(string):
+    if(len(string)!= len(set(string))):
+        return(False)
+    return True
