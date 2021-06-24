@@ -18,6 +18,8 @@ def stringCompression(string):
 
     # returns original string if compressed string isn't smaller
     return min(string, "".join(compressed), key=len)
+    # the general syntax for the min function is 
+    # min(iterable, default-value, function)--- in our case we return ''.join(compressed)
 
 
 print(stringCompression('abbbaaaa'))
